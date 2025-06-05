@@ -1,0 +1,19 @@
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+h1 {
+  color: #0f4ea4;
+}
+
+
+p, 
+li {
+  font-size: 18px;
+}
+
+
+a {
+  text-decoration: none;
+}
