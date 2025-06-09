@@ -1,22 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Steffen Energy LLC</title>
-  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steffen Energy LLC | Strategic Energy Consulting</title>
+  <link href="./assets/css/style.css" type="text/css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h1>Steffen Energy LLC</h1>
-  <p>Strategic project management, technical writing, and policy-oriented advisory support.</p>
-  <ul>
-    <li>Technical writing and synthesis for public-facing reports, white papers, and funding proposals</li>
-    <li>Software product strategy for grid intelligence and DER planning tools</li>
-    <li>Technical project management for EV forecasting and electrification studies</li>
-    <li>Convening and facilitating multi-stakeholder advisory groups</li>
-    <li>Regulatory and policy analysis related to grid transformation</li>
-  </ul>
-  <p><a href="https://www.linkedin.com/in/matthew-steffen22/" target="_blank">LinkedIn</a></p>
+    <header>
+        <nav>
+            <div class="logo">Steffen Energy LLC</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div id="hero-content">
+          <h1>Strategic Guidance for a Transforming Energy Landscape</h1>
+          <p>Expert project management, technical writing, and policy advisory for the future of energy.</p>
+          <a href="#services" class="cta-button">Explore Our Services</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <div id="container">
+          <h2>Your Partner in Energy Innovation</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>Steffen Energy LLC provides critical support for organizations navigating the complexities 
+              of the clean energy transition. We believe in a collaborative and detail-oriented approach, 
+              delivering clear, actionable insights that drive projects forward. Our mission is to bridge 
+              the gap between technical innovation and policy implementation, ensuring our clients are at 
+              the forefront of the evolving energy sector.</p>
+            </div>
+            <div class="about-image">
+              <img src="https://via.placeholder.com/400" alt="Steffen Energy LLC principal">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services">
+        <div class="container">
+        <h2>Our Expertise</h2>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="icon">&#128221;</div> 
+                <h3>Technical Writing & Synthesis</h3>
+                <p>Crafting clear and compelling public-facing reports, white papers, and successful funding proposals.</p>
+              </div>
+
+              <div class="service-card">
+                <div class="icon">&#128187;</div>
+                <h3>Software Product Strategy</h3>
+                <p>Informing the development of cutting-edge grid intelligence and Distributed Energy Resource (DER) planning tools.</p>
+              </div>
+
+              <div class="service-card">
+                <div class="icon">&#128202;</div>
+                <h3>Technical Project Management</h3>
+                <p>Leading complex EV forecasting and electrification studies from conception to completion.</p>
+              </div>
+
+              <div class="service-card">
+                <div class="icon">&#128172;</div>
+                <h3>Stakeholder Facilitation</h3>
+                <p>Expertly convening and facilitating multi-stakeholder advisory groups to build consensus and drive action.</p>
+              </div>
+
+              <div class="service-card">
+                <div class="icon">&#128203;</div>
+                <h3>Regulatory & Policy Analysis</h3>
+                <p>Providing in-depth analysis and strategic advice on regulatory issues related to grid transformation.</p>
+              </div>    
+            </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="container">
+          <h2>Get in Touch</h2>
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <p>Ready to discuss your next project? Reach out today.</p>
+              <ul>
+                <li><a href="mailto:matt@steffenenergy.com"><strong>Email</strong></a></li>
+                <li><a href="https://www.linkedin.com/in/matthew-steffen22/"><strong>LinkedIn</strong></a></li>
+              </ul>
+            </div>
+            <form class="contact-form">
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <!-- Email Input -->
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <!-- Message Input-->
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Steffen Energy LLC. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
+
 </body>
 </html>
