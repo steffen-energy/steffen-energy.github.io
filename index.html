@@ -15,12 +15,19 @@
     <header>
         <nav>
           <a href="#hero" class="logo"><img src="assets/img/SEwhiteLogo.svg" alt="Steffen Energy Homepage"></a>
+
+          <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+
+          <div class="nav-links">
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+          </div>
         </nav>
     </header>
 
@@ -64,31 +71,31 @@
         <h2>Our Expertise</h2>
             <div class="services-grid">
               <div class="service-card">
-                <i class="fa-solid fa-file-pen icon"></i> 
+                <i class="fa-solid fa-file-pen icon" aria-hidden="true"></i> 
                 <h3>Technical Writing & Synthesis</h3>
                 <p>Crafting clear and compelling public-facing reports, white papers, and successful funding proposals.</p>
               </div>
 
               <div class="service-card">
-                <i class="fa-solid fa-sitemap icon"></i>
+                <i class="fa-solid fa-sitemap icon" aria-hidden="true"></i>
                 <h3>Software Product Strategy</h3>
                 <p>Informing the development of cutting-edge grid intelligence and Distributed Energy Resource (DER) planning tools.</p>
               </div>
 
               <div class="service-card">
-                <i class="fa-solid fa-list-check icon"></i>
+                <i class="fa-solid fa-list-check icon" aria-hidden="true"></i>
                 <h3>Technical Project Management</h3>
                 <p>Leading complex EV forecasting and electrification studies from conception to completion.</p>
               </div>
 
               <div class="service-card">
-                <i class="fa-solid fa-users-gear icon"></i>
+                <i class="fa-solid fa-users-gear icon" aria-hidden="true"></i>
                 <h3>Stakeholder Facilitation</h3>
                 <p>Expertly convening and facilitating multi-stakeholder advisory groups to build consensus and drive action.</p>
               </div>
 
               <div class="service-card">
-                <i class="fa-solid fa-scale-balanced icon"></i>
+                <i class="fa-solid fa-scale-balanced icon" aria-hidden="true"></i>
                 <h3>Regulatory & Policy Analysis</h3>
                 <p>Providing in-depth analysis and strategic advice on regulatory issues related to grid transformation.</p>
               </div>    
@@ -101,13 +108,13 @@
         <div class="container">
           <h2>Get in Touch</h2>
           <div class="contact-wrapper">
-            <div class="contact-info">
+            <address class="contact-info">
               <p>Ready to discuss your next project? Reach out today.</p>
               <ul>
-                <li><a href="mailto:matt@steffenenergy.com"><strong>Email</strong></a></li>
-                <li><a href="https://www.linkedin.com/in/matthew-steffen22/"><strong>LinkedIn</strong></a></li>
+                <li><a href="mailto:matt@steffenenergy.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/matthew-steffen22/">LinkedIn</a></li>
               </ul>
-            </div>
+            </address>
             <form id="contact-form" action="https://formspree.io/f/mkgbjqgb" method="POST" class="contact-form">
               <!-- Name Input -->
               <div class="form-group">
@@ -135,6 +142,7 @@
 
     <footer>
         <div class="container">
+            <p>&copy; Website built by and for Steffen Energy.</p>
             <p>&copy; 2025 Steffen Energy LLC. All Rights Reserved.</p>
             <ul>
                 <li><a href="#hero">Home</a></li>
