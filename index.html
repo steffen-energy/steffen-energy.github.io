@@ -1,3 +1,8 @@
+---
+layout: default
+title: Strategic Energy Consulting
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,25 +113,19 @@
         <div class="container">
           <h2>Featured Publications</h2>
           <div class="publications-grid">
+            
+            {% for pub in site.data.publications limit:2 %}
             <div class="publication-card">
-              <img src="assets/img/report-cover-1.jpg" alt="Cover of the EV Load Forecasting Guide">
+              <img src="{{ pub.image }}" alt="{{ pub.alt_text }}">
               <div class="card-content">
-                <h3>EV Load Forecasting Guide</h3>
-                <p class="publication-meta"><b>Client:</b> Electric Power Engineers (EPE) | <b>Published</b> August 2025</p>
-                <p class="publication-summary">As lead author, Steffen Energy synthesized findings from industry and regulatory working groups to draft a practical framework for EV load forecasting.</p>
-                <a href="path/to/report-1.pdf" class="cta-button" target="_blank" rel="noopener noreferrer">Read the Report</a>
+                <h3>{{ pub.title }}</h3>
+                <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published</b> {{ pub.date }}</p>
+                <p class="publication-summary">{{ pub.summary }}</p>
+                <a href="{{ pub.url }}" class="cta-button" target="_blank" rel="noopener noreferrer">Read The Report</a>
               </div>
             </div>
+            {% endfor %}
 
-            <div class="publication-card">
-              <img src="assets/img/report-cover-2.jpg" alt="Cover of the DER Integration Analysis">
-              <div class="card-content">
-                <h3>Load and DER Forecasting Report</h3>
-                <p class="publication-meta"><b>Client:</b> Electric Power Engineers (EPE) | <b>Published</b> July 2025</p>
-                <p class="publication-summary">This report provides an detailed description of current practices and challenges...</p>
-                <a href="path/to/report-2.pdf" class="cta-button" target="_blank" rel="noopener noreferrer">Read the Report</a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
