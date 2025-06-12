@@ -4,20 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | Steffen Energy LLC</title>
-  <link href="/assets/css/style.css" type="text/css" rel="stylesheet">
-  </head>
+  <link href="{{ '/assets/css/style.css' | relative_url }}" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <header>
-      </header>
+        <nav>
+          <a href="{{ '/index.html' | relative_url }}" class="logo"><img src="{{ '/assets/img/SEwhiteLogo.svg' | relative_url }}" alt="Steffen Energy Homepage"></a>
+
+          <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+
+          <div class="nav-links">
+            <ul>
+                <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/index.html#about' | relative_url }}">About</a></li>
+                <li><a href="{{ '/index.html#services' | relative_url }}">Services</a></li>
+                <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+                <li><a href="{{ '/index.html#contact' | relative_url }}">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
 
     <main>
         {{ content }}
     </main>
 
     <footer>
-        </footer>
+        <div class="container">
+            <p>Website built by and for Steffen Energy.<br>
+            &copy; 2025 Steffen Energy LLC. All Rights Reserved.</p>
+            <ul>
+                 <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
+                 <li><a href="{{ '/index.html#about' | relative_url }}">About</a></li>
+                 <li><a href="{{ '/index.html#services' | relative_url }}">Services</a></li>
+                 <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+                 <li><a href="{{ '/index.html#contact' | relative_url }}">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
 
-    <script src="/assets/js/main.js"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

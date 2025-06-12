@@ -1,0 +1,9 @@
+# Ignore the bundle directory
+vendor/bundle
+
+# Ignore Jekyll's build output
+_site/
+
+# Ignore other Jekyll files
+.jekyll-cache/
+.jekyll-metadata

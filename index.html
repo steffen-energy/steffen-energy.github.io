@@ -3,184 +3,121 @@ layout: default
 title: Strategic Energy Consulting
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Steffen Energy | Strategic Energy Consulting</title>
-  <link href="./assets/css/style.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
+<section id="hero">
+  <video id="hero-video" autoplay loop muted playsinline>
+    <source src="https://cdn.coverr.co/videos/coverr-a-pensive-cat-prepares-for-the-day-2723/1080p.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <div id="hero-content">
+    <h1>Strategic Guidance for a Transforming Energy Landscape</h1>
+    <p>Expert project management, technical writing, and policy advisory for the future of energy.</p>
+    <a href="#services" class="cta-button">Explore Our Services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+</section>
 
-<body>
-    <header>
-        <nav>
-          <a href="#hero" class="logo"><img src="assets/img/SEwhiteLogo.svg" alt="Steffen Energy Homepage"></a>
+<section id="about">
+  <div class="container">
+    <h2>Your Partner in Energy Innovation</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Steffen Energy, founded by Matt Steffen, provides critical support for organizations navigating
+           the complexities of the energy transition. We deliver comprehensive project management, 
+           stakeholder facilitation, and technical report development—informed by deep expertise in technology and policy—
+           ensuring our clients are at the forefront of the evolving energy sector.</p>
+      </div>
+      <div class="about-image">
+        <img src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Steffen Energy LLC principal">
+      </div>
+    </div>
+  </div>
+</section>
 
-          <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-          </button>
-
-          <div class="nav-links">
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-    </header>
-
-    <main>
-      <!-- Hero Section -->
-       <section id="hero">
-        <video id="hero-video" autoplay loop muted playsinline>
-          <source src="assets/img/siteBackground.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        
-        <div id="hero-content">
-          <h1>Strategic Guidance for a Transforming Energy Landscape</h1>
-          <p>Expert project management, technical writing, and policy advisory for the future of energy.</p>
-          <a href="#services" class="cta-button">Explore Our Services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+<section id="services">
+  <div class="container">
+  <h2>Our Expertise</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-file-pen icon" aria-hidden="true"></i> 
+          <h3>Technical Writing & Synthesis</h3>
+          <p>Crafting clear and compelling public-facing reports, white papers, and successful funding proposals.</p>
         </div>
-      </section>
 
-      <!-- About Section -->
-      <section id="about">
-        <div class="container">
-          <h2>Your Partner in Energy Innovation</h2>
-          <div class="about-content">
-            <div class="about-text">
-              <p>Steffen Energy, founded by Matt Steffen, provides critical support for organizations navigating
-                 the complexities of the energy transition. We deliver comprehensive project management, 
-                 stakeholder facilitation, and technical report development—informed by deep expertise in technology and policy—
-                 ensuring our clients are at the forefront of the evolving energy sector.</p>
-            </div>
-            <div class="about-image">
-              <img src="assets/img/headshot.jpg" alt="Steffen Energy LLC principal">
-            </div>
-          </div>
+        <div class="service-card">
+          <i class="fa-solid fa-sitemap icon" aria-hidden="true"></i>
+          <h3>Software Product Strategy</h3>
+          <p>Informing the development of cutting-edge grid intelligence and Distributed Energy Resource (DER) planning tools.</p>
         </div>
-      </section>
 
-      <!-- Services Section -->
-      <section id="services">
-        <div class="container">
-        <h2>Our Expertise</h2>
-            <div class="services-grid">
-              <div class="service-card">
-                <i class="fa-solid fa-file-pen icon" aria-hidden="true"></i> 
-                <h3>Technical Writing & Synthesis</h3>
-                <p>Crafting clear and compelling public-facing reports, white papers, and successful funding proposals.</p>
-              </div>
-
-              <div class="service-card">
-                <i class="fa-solid fa-sitemap icon" aria-hidden="true"></i>
-                <h3>Software Product Strategy</h3>
-                <p>Informing the development of cutting-edge grid intelligence and Distributed Energy Resource (DER) planning tools.</p>
-              </div>
-
-              <div class="service-card">
-                <i class="fa-solid fa-list-check icon" aria-hidden="true"></i>
-                <h3>Technical Project Management</h3>
-                <p>Leading complex EV forecasting and electrification studies from conception to completion.</p>
-              </div>
-
-              <div class="service-card">
-                <i class="fa-solid fa-users-gear icon" aria-hidden="true"></i>
-                <h3>Stakeholder Facilitation</h3>
-                <p>Expertly convening and facilitating multi-stakeholder advisory groups to build consensus and drive action.</p>
-              </div>
-
-              <div class="service-card">
-                <i class="fa-solid fa-scale-balanced icon" aria-hidden="true"></i>
-                <h3>Regulatory & Policy Analysis</h3>
-                <p>Providing in-depth analysis and strategic advice on regulatory issues related to grid transformation.</p>
-              </div>    
-            </div>
+        <div class="service-card">
+          <i class="fa-solid fa-list-check icon" aria-hidden="true"></i>
+          <h3>Technical Project Management</h3>
+          <p>Leading complex EV forecasting and electrification studies from conception to completion.</p>
         </div>
-      </section>
 
-      <!-- Feature Work Section -->
-      <section id="featured-work">
-        <div class="container">
-          <h2>Featured Publications</h2>
-          <div class="publications-grid">
-            
-            {% for pub in site.data.publications limit:2 %}
-            <div class="publication-card">
-              <img src="{{ pub.image }}" alt="{{ pub.alt_text }}">
-              <div class="card-content">
-                <h3>{{ pub.title }}</h3>
-                <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published</b> {{ pub.date }}</p>
-                <p class="publication-summary">{{ pub.summary }}</p>
-                <a href="{{ pub.url }}" class="cta-button" target="_blank" rel="noopener noreferrer">Read The Report</a>
-              </div>
-            </div>
-            {% endfor %}
-
-          </div>
+        <div class="service-card">
+          <i class="fa-solid fa-users-gear icon" aria-hidden="true"></i>
+          <h3>Stakeholder Facilitation</h3>
+          <p>Expertly convening and facilitating multi-stakeholder advisory groups to build consensus and drive action.</p>
         </div>
-      </section>
 
-      <!-- Contact Section -->
-      <section id="contact">
-        <div class="container">
-          <h2>Get in Touch</h2>
-          <div class="contact-wrapper">
-            <address class="contact-info">
-              <p>Ready to discuss your next project? Reach out today.</p>
-              <ul>
-                <li><a href="mailto:matt@steffenenergy.com">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/matthew-steffen22/">LinkedIn</a></li>
-              </ul>
-            </address>
-            <form id="contact-form" action="https://formspree.io/f/mkgbjqgb" method="POST" class="contact-form">
-              <!-- Name Input -->
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-              <!-- Email Input -->
-              <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-              <!-- Message Input-->
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-              </div>
-              <button type="submit" class="submit-button">Send Message</button>
-            </form>
-            <div id="form-status"></div>
-          </div>
+        <div class="service-card">
+          <i class="fa-solid fa-scale-balanced icon" aria-hidden="true"></i>
+          <h3>Regulatory & Policy Analysis</h3>
+          <p>Providing in-depth analysis and strategic advice on regulatory issues related to grid transformation.</p>
+        </div>    
+      </div>
+  </div>
+</section>
+
+<section id="featured-work">
+  <div class="container">
+    <h2>Featured Publications</h2>
+    <div class="publications-grid">
+      
+      {% for pub in site.data.publications limit:2 %}
+      <div class="publication-card">
+        <img src="{{ pub.image | relative_url }}" alt="{{ pub.alt_text }}">
+        <div class="card-content">
+          <h3>{{ pub.title }}</h3>
+          <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published</b> {{ pub.date }}</p>
+          <p class="publication-summary">{{ pub.summary }}</p>
+          <a href="{{ pub.url }}" class="cta-button" target="_blank" rel="noopener noreferrer">Read The Report</a>
         </div>
-      </section>
+      </div>
+      {% endfor %}
 
-    </main>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <p>Website built by and for Steffen Energy.<br>
-            &copy; 2025 Steffen Energy LLC. All Rights Reserved.</p>
+<section id="contact">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <div class="contact-wrapper">
+      <address class="contact-info">
+        <p>Ready to discuss your next project? Reach out today.</p>
+        <ul>
+          <li><a href="mailto:matt@steffenenergy.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/matthew-steffen22/">LinkedIn</a></li>
+        </ul>
+      </address>
+      <form id="contact-form" action="https://formspree.io/f/mkgbjqgb" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
         </div>
-    </footer>
-
-    <script src="./assets/js/main.js"></script>
-
-</body>
-</html>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+      <div id="form-status"></div>
+    </div>
+  </div>
+</section>

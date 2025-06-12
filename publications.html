@@ -5,27 +5,27 @@ title: Publications
 
 <section id="page-header" class="sub-hero">
   <div class="container">
-    <h1>Publications & Reports</h1>
+    <h1>Publications</h1>
     <p>A selection of technical reports and analyses led by Steffen Energy.</p>
   </div>
 </section>
 
 <section id="publications">
   <div class="container">
-      <div class="publications-grid">
-        
-        {% for pub in site.data.publications %}
-        <div class="publication-card">
-          <img src="{{ pub.image }}" alt="{{ pub.alt_text }}">
-          <div class="card-content">
-            <h3>{{ pub.title }}</h3>
-            <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published</b> {{ pub.date }}</p>
-            <p class="publication-summary">{{ pub.summary }}</p>
-            <a href="{{ pub.url }}" class="cta-button" target="_blank" rel="noopener noreferrer">Read The Report</a>
-          </div>
+    <div class="publications-grid">
+      
+      {% for pub in site.data.publications %}
+      <div class="publication-card">
+        <img src="{{ pub.image }}" alt="{{ pub.alt_text }}">
+        <div class="card-content">
+          <h3>{{ pub.title }}</h3>
+          <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published</b> {{ pub.date }}</p>
+          <p class="publication-summary">{{ pub.summary }}</p>
+          <a href="{{ pub.url }}" class="cta-button" target="_blank" rel="noopener noreferrer">Read The Report</a>
         </div>
-        {% endfor %}
-
       </div>
+      {% endfor %}
+
+    </div>
   </div>
 </section>
