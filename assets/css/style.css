@@ -28,6 +28,13 @@ body {
     line-height: 1.6;
     color: var(--dark-gray);
     background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .container {
@@ -152,7 +159,7 @@ nav ul li a:hover {
 }
 
 /* ------------------- */
-/* 3. Hero Section */
+/* 3. Homepage Hero Section */
 /* ------------------- */
 #hero {
     /* Add position relative to act as an anchor for the video */
@@ -227,7 +234,7 @@ nav ul li a:hover {
 }
 
 /* ------------------- */
-/* 4. About Section */
+/* 4. Homepage About Section */
 /* ------------------- */
 #about {
     background-color: var(--light-gray);
@@ -256,7 +263,7 @@ nav ul li a:hover {
 }
 
 /* ------------------- */
-/* 5. Services Section */
+/* 5. Homepage Services Section */
 /* ------------------- */
 .services-grid {
     display: grid;
@@ -285,12 +292,15 @@ nav ul li a:hover {
 }
 
 /* ------------------- */
-/* 6. Contact Section */
+/* 6. Publications Section */
 /* ------------------- */
-#contact {
+#featured-work {
     background-color: var(--light-gray);
 }
 
+/* ------------------- */
+/* 7. Contact Section */
+/* ------------------- */
 .contact-wrapper {
     display: flex;
     gap: 50px;
@@ -368,9 +378,8 @@ nav ul li a:hover {
     background-color: #0b3c8a; /* Darker blue */
 }
 
-
 /* ------------------- */
-/* 7. Footer */
+/* 8. Footer */
 /* ------------------- */
 footer {
     background-color: var(--dark-gray);
@@ -403,7 +412,7 @@ footer a:hover {
 }
 
 /* ------------------- */
-/* 8. Responsive Design */
+/* 9. Responsive Design */
 /* ------------------- */
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
@@ -499,4 +508,27 @@ footer a:hover {
     footer p {
         margin-bottom: 15px;
     }
+}
+
+/* ------------------- */
+/* 10. Publications Page */
+/* ------------------- */
+#page-header {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 150px 0 60px 0; /* Extra top padding to clear the fixed header */
+}
+
+#page-header h1 {
+  margin-bottom: 1rem;
+}
+
+#publications {
+  padding-top: 60px;
+}
+
+.publications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 60px;
 }
