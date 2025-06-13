@@ -16,7 +16,7 @@ title: Publications
       
       {% for pub in site.data.publications %}
       <div class="publication-card">
-        <img src="{{ pub.image }}" alt="{{ pub.alt_text }}">
+        <img src="{{ pub.image }}" alt="{{ pub.alt_text }}" loading="lazy">
         <div class="card-content">
           <h3>{{ pub.title }}</h3>
           <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published</b> {{ pub.date }}</p>
