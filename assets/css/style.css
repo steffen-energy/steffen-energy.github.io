@@ -400,6 +400,12 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
+.form-field-extra {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
 .submit-button:hover {
     background-color: #0b3c8a; /* Darker blue */
 }
