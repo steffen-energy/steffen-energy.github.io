@@ -5,6 +5,7 @@
   image: "assets/img/report-cover-1.jpg"
   alt_text: "Cover of the EV Load Forecasting Guide"
   url: "path/to/report-1.pdf"
+  status: forthcoming # Remove when published
 
 - title: "Load and DER Forecasting Report"
   client: "Electric Power Engineers (EPE)"
@@ -13,3 +14,4 @@
   image: "assets/img/report-cover-2.jpg"
   alt_text: "Cover of the DER Integration Analysis"
   url: "path/to/report-2.pdf"
+  status: forthcoming # Remove when published

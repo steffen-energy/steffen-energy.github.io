@@ -247,6 +247,17 @@ nav ul li a:hover {
     transform: translateY(-3px);*/
 }
 
+/* Add this with your other button styles */
+.cta-button.is-disabled {
+    background-color: #ccc; /* A gray, disabled color */
+    color: var(--white);
+    cursor: not-allowed;
+    border-color: #ccc;
+}
+.cta-button.is-disabled:hover {
+    transform: none; /* Disable the hover effect */
+}
+
 /* ------------------- */
 /* 4. Homepage About Section */
 /* ------------------- */
@@ -322,6 +333,12 @@ nav ul li a:hover {
 
 .publication-card .publication-summary {
     margin-bottom: 20px;
+}
+
+.publication-card img {
+    width: 100%;
+    height: 300px;         /* This sets a consistent height for all card images */
+    object-fit: cover;     /* Add this line - it's the key to the fix */
 }
 
 /* ------------------- */

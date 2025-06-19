@@ -17,12 +17,18 @@ description: "A selection of technical reports and analyses led by Steffen Energ
       
       {% for pub in site.data.publications %}
       <div class="publication-card">
-        <img src="{{ pub.image }}" alt="{{ pub.alt_text }}" loading="lazy">
+        <img src="{{ '/assets/img/PublicationForthcoming.jpg' }}" alt="{{ pub.alt_text }}" loading="lazy">
         <div class="card-content">
           <h3>{{ pub.title }}</h3>
           <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published</b> {{ pub.date }}</p>
           <p class="publication-summary">{{ pub.summary }}</p>
-          <a href="{{ pub.url }}" class="cta-button" target="_blank" rel="noopener noreferrer">Read The Report</a>
+
+          {% if pub.status == "forthcoming" %}
+            <span class="cta-button is-disabled">Publication Forthcoming</span>
+          {% else %}
+            <a href="{{ pub.url }}" class="cta-button" target="_blank" rel="noopener noreferrer">Read The Report</a>
+          {% endif %}
+
         </div>
       </div>
       {% endfor %}
