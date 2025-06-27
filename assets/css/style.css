@@ -242,9 +242,6 @@ nav ul li a:hover {
     transform: translateY(-3px) scale(1.05); /* Lifts and slightly enlarges */
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     background: var(--accent-color);
-
-    /*background-color: #c49a24;
-    transform: translateY(-3px);*/
 }
 
 /* Add this with your other button styles */
