@@ -11,7 +11,7 @@
   client: "Electric Power Engineers (EPE)"
   date: "Pending"
   summary: "This report provides an detailed description of current practices and challenges in long-term load and distributed energy resource (DER) forecasting."
-  image: "assets/img/report-cover-2.jpg"
+  image: "assets/img/LT-Load-and-DER-Forecasting-report-thumbnail.png"
   alt_text: "Cover of the DER Integration Analysis"
-  url: "path/to/report-2.pdf"
-  status: forthcoming # Remove when published
+  url: "https://www.esig.energy/long-term-load-and-der-forecasting/"
+  status: # Remove when published
