@@ -322,6 +322,23 @@ nav ul li a:hover {
 #featured-work {
     background-color: var(--light-gray);
 }
+.publication-card {
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-top: 4px solid var(--primary-color);
+}
+
+.publication-card .card-content {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: white;
+}
 
 .publication-summary {
     overflow: hidden;
@@ -336,9 +353,23 @@ nav ul li a:hover {
 }
 
 .publication-card img {
+    display: block;
     width: 100%;
-    height: 300px;         /* This sets a consistent height for all card images */
-    object-fit: cover;     /* Add this line - it's the key to the fix */
+    height: 300px;
+    object-fit: contain;
+    aspect-ratio: 16 / 9;
+}
+
+.publication-meta {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.publication-card .card-content .cta-button {
+    align-self: center;
+    width: fit-content;
+    margin-bottom: 20px;
 }
 
 /* ------------------- */

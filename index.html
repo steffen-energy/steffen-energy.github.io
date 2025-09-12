@@ -81,7 +81,7 @@ description: "Steffen Energy provides expert project management, technical writi
         <img src="{{ pub.image | relative_url }}" alt="{{ pub.alt_text }}">
         <div class="card-content">
           <h3>{{ pub.title }}</h3>
-          <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published</b> {{ pub.date }}</p>
+          <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published:</b> {{ pub.date }}</p>
           <p class="publication-summary">{{ pub.summary }}</p>
 
           {% if pub.status == "forthcoming" %}
