@@ -2,9 +2,9 @@
   client: "Electric Power Engineers (EPE)"
   date: "Pending"
   summary: "As lead author, Steffen Energy synthesized findings from industry and regulatory working groups to draft a practical framework for EV load forecasting."
-  image: "assets/img/report-cover-1.jpg"
-  alt_text: "Cover of the EV Load Forecasting Guide"
-  url: "path/to/report-1.pdf"
+  image: "assets/img/PublicationForthcoming.jpg"
+  alt_text: "A placeholder graphic indicating a publication is forthcoming."
+  url: "#"
   status: forthcoming # Remove when published
 
 - title: "Load and DER Forecasting Report"
