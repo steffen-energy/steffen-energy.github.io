@@ -17,7 +17,7 @@ description: "A selection of technical reports and analyses led by Steffen Energ
       
       {% for pub in site.data.publications %}
       <div class="publication-card">
-        <img src="{{ '/assets/img/PublicationForthcoming.jpg' }}" alt="{{ pub.alt_text }}" loading="lazy">
+        <img src="{{ pub.image | relative_url }}" alt="{{ pub.alt_text }}" loading="lazy">
         <div class="card-content">
           <h3>{{ pub.title }}</h3>
           <p class="publication-meta"><b>Client:</b> {{ pub.client }} | <b>Published</b> {{ pub.date }}</p>
